@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:regular,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700,800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/stile.css">
+    <title>Go</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="" class="hreader__logo">
+                    <img src="img/MgsuNiuLogo.png" alt="logo">
+                </a>
+                <div class="header__menu menu">
+                    <nav id="menu" class="menu_body">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+                            <li class="menu__item"><a href="OS.html" class="menu__link">Выбор OS. </a></li>
+                            <li class="menu__item"><a href="FS.html" class="menu__link">Выбор Файловой Системы </a></li>
+                            <li class="menu__item"><a href="Thin.html" class="menu__link">Средства «тонкой» настройки системы. </a></li>
+                            <li class="menu__item"><a href="Block.html" class="menu__link">Средства ограничения доступа к вычислительной системе и её отдельным составляющим</a></li>
+                            <li class="menu__item"><a href="Linux.html" class="menu__link">Управление пакетами в Linux</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__button">
+                    <a href="Bibliography.html" class="button button_blue"> Список Литературы </a>
+                    <a href="#menu" type="button" class="menu_icon icon-menu"><span></span></a>
+                </div>
+            </div>
+            <div class="header__container__low">
+                <div class="header__low_menu low_menu">
+                    <nav nav id="low_menu" class="low_menu_body">
+                        <ul class="menu__list__low">
+                            <li class="menu__item__low"><a href="FS_NTFS.html" class="menu__link">NTFS</a></li>
+                            <li class="menu__item__low"><a href="FS_Fat32.html" class="menu__link">Fat32</a></li>
+                            <li class="menu__item__low"><a href="FS_exFat.html" class="menu__link">exFat</a></li>
+
+                        </ul>
+
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="body__content">
+            	Обоснование разметки жесткого диска на разделы (диск должен содержать не менее двух логических разделов) и выбор файловых систем для каждого раздела. 
+Причин делить жёсткий диск на разделы несколько. Разделы на жестком диске в первую очередь нужны для эффективного и безопасного хранения информации. Если жесткий диск у вас один, но хочется иметь две или более операционных систем, вам также придется поделить жесткий диск на разделы, так как ОС Windows и другие операционные системы можно устанавливать только на разные разделы или жесткие диски.
+Существуют и другие причины разделения жесткого диска на разделы. Например, для корректной работы операционных систем GNU/Linux следует создать несколько разделов
+-	средства разметки диска; 
+Разделить жесткий диск можно разделить следующими средствами:
+<ul> 
+<li>Встроенными сервисами:</li>
+
+<li>•	Управление дисками</li>
+<li>•	Командная строка</li>
+
+<li>Сторонние приложения:</li>
+
+<li>•	AOMEI PartitionAssistant</li>
+<li>•	AcronisDiskDirector</li>
+<li>•	MiniToolPartitionWizard</li>
+<li>•	GParted</li>
+<li>•	EaseUSPartitionMaster</li>
+</ul>
+-	выбор и обоснование выбора файловой системы для каждого раздела. 
+Для выбора файловой системы, нужно разобраться: что подходит лучше и для чего.
+
+<table class="iksweb">
+	<tbody>
+		<tr>
+			<td>Название</td>
+			<td>Ntfs</td>
+			<td>exFAT</td>
+			<td>FAT32</td>
+		</tr>
+		<tr>
+			<td>Надёжность</td>
+			<td>++</td>
+			<td>+</td>
+			<td>+</td>
+		</tr>
+		<tr>
+			<td>Работа с большими пакетами данных</td>
+			<td>++</td>
+			<td>+</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>Работа с малыми пакетами данных</td>
+			<td>-</td>
+			<td>+</td>
+			<td>++</td>
+		</tr>
+		<tr>
+			<td>Быстродействие</td>
+			<td>+</td>
+			<td>+</td>
+			<td>++</td>
+		</tr>
+	</tbody>
+</table>
+        </div> 
+</body>
